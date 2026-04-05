@@ -64,6 +64,10 @@
     opacity: 1;
 }
 
+.nav-auth-mobile {
+    display: none;
+}
+
 .nav-item::after {
     content: '';
     position: absolute;
@@ -115,7 +119,7 @@
 }
 
 .mobile-menu-btn {
-    display: none;
+    display: none  !important;
 }
 
 .mobile-only {
@@ -128,7 +132,7 @@
     }
 
     .mobile-menu-btn {
-        display: flex;
+        display: flex  !important;
     }
 
     .desktop-only {
@@ -167,10 +171,10 @@
     }
 
     .nav-auth-mobile {
+        display: flex;         /* was missing — replace the block-only definition */
         margin-top: auto;
         width: 100%;
         padding-top: 2rem;
-        display: flex;
         justify-content: space-between;
         align-items: center;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
